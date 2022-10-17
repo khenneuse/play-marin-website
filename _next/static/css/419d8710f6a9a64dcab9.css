@@ -741,7 +741,7 @@
 @media screen and (max-width:750px) {
   .homepage_tag-line__2lrfy {
     position: relative;
-    top: -80px;
+    top: unset;
     left: unset;
     right: unset;
     margin-bottom: -30px;
