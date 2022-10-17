@@ -1,0 +1,12 @@
+.header_donate-button__3-7Py {
+  margin-right: 30px;
+  margin-left: auto
+}
+
+@media screen and (max-width:1020px) {
+  .header_donate-button__3-7Py {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 10px
+  }
+}

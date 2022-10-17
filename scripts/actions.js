@@ -6,3 +6,7 @@ function menuToggle() {
     x.style.display = "";
   }
 }
+
+function goToDonationPage() {
+  location.href='donate.html';
+}
