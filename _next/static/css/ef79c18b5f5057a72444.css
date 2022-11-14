@@ -602,14 +602,9 @@
   line-height: 150%
 }
 
-.about-page_partners__2IXQ9 {
-  list-style: none;
-  padding: 0;
-  -webkit-column-width: 260px;
-  column-width: 260px;
-  line-height: 170%;
-  width: 90%;
-  font-weight: 700
+.about-page_partners_img {
+  max-width: 100%;
+  height: auto;
 }
 
 .about-page_heading__3FS22 {
