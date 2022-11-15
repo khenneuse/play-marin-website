@@ -1,0 +1,115 @@
+.footer_support-explainer__1XBIf {
+  font-family: Roboto Condensed, sans-serif
+}
+
+@media screen and (min-width:1020px) {
+  .footer_content__2Gmx6 {
+    min-width: 1020px;
+    max-width: 1300px;
+    width: calc(100% - 60px);
+    margin: 0 auto
+  }
+}
+
+@media screen and (max-width:1020px) {
+  .footer_content__2Gmx6 {
+    width: 100%;
+    min-width: 320px
+  }
+}
+
+.footer_wrapper__2RcJw {
+  background: -webkit-linear-gradient(45deg, #009edb, #991f68);
+  background: linear-gradient(45deg, #009edb, #991f68);
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  right: 0;
+  width: 100%
+}
+
+.footer_content__2Gmx6 {
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex
+}
+
+.footer_logo__23cAG {
+  display: block;
+  margin-left: -15px
+}
+
+.footer_social-media-links__218DT {
+  margin-left: -10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px
+}
+
+.footer_copyright__3EiU8 {
+  max-width: 380px;
+  font-size: 14px;
+  line-height: 1.25rem;
+  margin-top: 40px
+}
+
+.footer_right-side__3spYM {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column
+}
+
+.footer_donate-button__3nlvf {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+  width: 140px
+}
+
+.footer_support-explainer__1XBIf {
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+  margin-top: 30px
+}
+
+@media screen and (min-width:1021px) {
+  .footer_logo__23cAG {
+    margin-top: 20px
+  }
+
+  .footer_content__2Gmx6 {
+    flex-direction: row;
+    align-items: center
+  }
+
+  .footer_right-side__3spYM {
+    margin-left: auto;
+    max-width: 400px
+  }
+}
+
+@media screen and (max-width:1020px) {
+  .footer_content__2Gmx6 {
+    position: relative;
+    flex-direction: column-reverse
+  }
+
+  .footer_right-side__3spYM {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    max-width: 500px
+  }
+
+  .footer_right-side__3spYM:after {
+    content: "";
+    height: 6px;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: -35px
+  }
+}
