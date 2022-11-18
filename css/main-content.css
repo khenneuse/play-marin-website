@@ -17,3 +17,55 @@
     min-width: 320px
   }
 }
+
+.alternating-photo-list_list-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative
+}
+
+.alternating-photo-list_list-wrap-humb {
+  width: 50%
+}
+
+.alternating-photo-list_list-wrap-humb img {
+  max-width: 100%;
+  vertical-align: top;
+  width: 100%
+}
+
+.alternating-photo-list_list-wrap-content {
+  width: 50%;
+  padding: 56px
+}
+
+.alternating-photo-list_list-wrap-content p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #333;
+  font-weight: 400
+}
+
+@media(min-width:991px) {
+  .alternating-photo-list_list-wrap:nth-child(2n) .alternating-photo-list_list-wrap-humb {
+    order: 2
+  }
+}
+
+@media screen and (max-width:990px) {
+  .alternating-photo-list_list-wrap {
+    flex-wrap: wrap
+  }
+
+  .alternating-photo-list_list-wrap-humb,
+  .alternating-photo-list_list-wrap-humb img {
+    width: 100%
+  }
+
+  .alternating-photo-list_list-wrap-content {
+    width: 100%;
+    padding: 50px 25px
+  }
+}
