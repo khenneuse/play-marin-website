@@ -343,26 +343,6 @@
   }
 }
 
-.main_content__LVWsg {
-  font-family: Roboto, sans-serif
-}
-
-@media screen and (min-width:1020px) {
-  .main_content__LVWsg {
-    min-width: 1020px;
-    max-width: 1300px;
-    width: calc(100% - 60px);
-    margin: 0 auto
-  }
-}
-
-@media screen and (max-width:1020px) {
-  .main_content__LVWsg {
-    width: 100%;
-    min-width: 320px
-  }
-}
-
 .feature-photo_position-wrap__3tktD {
   width: 100%;
   position: absolute;
