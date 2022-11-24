@@ -424,6 +424,14 @@
   -moz-text-fill-color: transparent
 }
 
+.homepage_mission-block-preamble_title {
+  margin-left: 40px;
+}
+
+.homepage_mission-block-preamble_description {
+  line-height: 150%
+}
+
 .homepage_video__Ung1b {
   min-width: 350px;
   margin-bottom: 80px
@@ -600,6 +608,11 @@
     width: 100%
   }
 
+  .homepage_mission-block-preamble_title {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
   .homepage_video__Ung1b {
     flex-direction: column;
     min-width: unset
@@ -703,6 +716,7 @@
   font-family: Roboto, sans-serif
 }
 
+.homepage_mission-block-preamble,
 .video-block_wrapper__fWIti {
   display: flex
 }
