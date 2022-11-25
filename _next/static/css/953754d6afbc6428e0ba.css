@@ -536,7 +536,7 @@
 .programs-page_program-filter__3BTsI {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin-bottom: 56px;
   padding-left: 50px
@@ -632,7 +632,6 @@
   .programs-page_program-filter__3BTsI {
     flex-wrap: wrap;
     text-align: center;
-    justify-content: center
   }
 
   .programs-page_program-filter__3BTsI ul {

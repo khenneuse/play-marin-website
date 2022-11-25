@@ -1,0 +1,28 @@
+.contact-photo_position-wrap {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 68vw;
+  overflow: hidden
+}
+
+.contact-photo_position-wrap img {
+  width: 100%
+}
+
+.contact-photo_sizer {
+  height: 60vw
+}
+
+@media screen and (max-width:1020px) {
+  .contact-photo_position-wrap {
+    height: auto;
+    position: relative;
+    min-width: 100%
+  }
+
+  .contact-photo_sizer {
+    display: none
+  }
+}
