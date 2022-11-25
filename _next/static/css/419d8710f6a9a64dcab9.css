@@ -479,8 +479,7 @@
   width: 100%;
   height: 100%;
   -webkit-object-fit: cover;
-  object-fit: cover;
-  border-radius: 100%
+  object-fit: cover
 }
 
 .homepage_mission-block-img-wrap__ql9wn {
