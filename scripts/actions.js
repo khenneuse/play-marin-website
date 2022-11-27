@@ -8,5 +8,5 @@ function menuToggle() {
 }
 
 function goToDonationPage() {
-  location.href='donate.html';
+  location.href='https://donate.playmarin.org/725222-givingplaymarin2022';
 }
