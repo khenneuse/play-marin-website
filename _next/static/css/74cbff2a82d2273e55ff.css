@@ -287,7 +287,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 580px;
+  height: 479px;
   overflow: hidden;
   background: -webkit-linear-gradient(45deg, #009edb, #5e419a 49.48%, #991f68);
   background: linear-gradient(45deg, #009edb, #5e419a 49.48%, #991f68)
@@ -318,7 +318,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 60vw;
+  height: 72vw;
   overflow: hidden
 }
 
@@ -327,7 +327,7 @@
 }
 
 .news-photo_sizer__xynXb {
-  height: 56vw
+  height: 68vw
 }
 
 .news-photo_tag-line-content__HDL2B {
@@ -400,7 +400,7 @@
   }
 
   .news-photo_sizer__xynXb {
-    height: 488px
+    height: 479px
   }
 }
 
