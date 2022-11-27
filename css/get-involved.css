@@ -70,10 +70,14 @@
   height: 66vw
 }
 
-.get_involved-preamble_title,
-.get_involved-cta_title {
+.get_involved-preamble_title {
   margin-left: 40px;
   margin-right: 40px;
+}
+
+.get_involved-cta_title,
+.get_involved-cta_title_div {
+  text-align: center;
 }
 
 .get_involved-preamble_description {
@@ -91,7 +95,7 @@
   font-style: italic;
 }
 
-.get_involved-cta_title_span {
+.get_involved-cta_title_div {
   font-weight: 900;
   font-size: 22px
 }
