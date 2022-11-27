@@ -287,7 +287,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 60vw;
+  height: 74vw;
   overflow: hidden
 }
 
@@ -296,7 +296,7 @@
 }
 
 .feature-photo_sizer__39YVc {
-  height: 56vw
+  height: 70vw
 }
 
 @media screen and (max-width:1020px) {
@@ -418,7 +418,8 @@
   width: 100%;
   height: 100%;
   -webkit-object-fit: cover;
-  object-fit: cover
+  object-fit: cover;
+  border-radius: 100%;
 }
 
 .homepage_mission-block-img-wrap__ql9wn {
