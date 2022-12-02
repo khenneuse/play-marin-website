@@ -8,5 +8,5 @@ function menuToggle() {
 }
 
 function goToDonationPage() {
-  location.href='https://donate.playmarin.org/445284-givingtuesplaymarin2022';
+  location.href='https://donate.playmarin.org/944598-holidaydonate';
 }
