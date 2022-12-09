@@ -21,7 +21,7 @@ Name: $from
 Email: $from_email
 Phone: $phone
 
-$rawMessage
+$raw_message
 ET;
 
 $headers[] = "From: $from <$from_email>";
