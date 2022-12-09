@@ -40,5 +40,5 @@ if (!empty($bcc_name)) {
 
 mail($to,$subject,$message, implode("\r\n", $headers));
 
-echo "Email sent";
+echo "Email successfully sent\n";
 ?>
