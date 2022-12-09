@@ -330,6 +330,7 @@
 }
 
 .contact-form_input__2UZtZ::placeholder,
+.contact-form_selectLabel,
 .contact-form_messageLabel__282nt {
   color: #333
 }
@@ -348,7 +349,8 @@
   flex-grow: 1
 }
 
-.contact-form_input__2UZtZ {
+.contact-form_input__2UZtZ,
+.contact-form_selectLabel {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -364,10 +366,22 @@
 }
 
 .contact-form_input__2UZtZ,
+.contact-form_selectLabel,
 .contact-form_messageLabel__282nt {
   font-size: 20px;
   font-family: Roboto Condensed;
   text-transform: uppercase
+}
+
+.contact-form_selectLabel {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.contact-form_selectSelect {
+  font-size: 18px;
+  font-family: Roboto Condensed, sans-serif
 }
 
 .contact-form_messageLabel__282nt {
