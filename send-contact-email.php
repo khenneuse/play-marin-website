@@ -1,12 +1,20 @@
 <?php
 
-$from = $_POST['name'];
-$from_email = $_POST['_replyto'];
-$phone = $_POST['phone'];
-$reason = $_POST['reason'];
-$raw_message = wordwrap($_POST['message'], 70);
+function processText($text) {
+    $text = strip_tags($text);
+    $text = trim($text);
+    $text = htmlspecialchars($text);
+    return $text;
+}
 
-if (!empty($_POST['_honeypot'])) {
+$from = processText($_POST['name']);
+$from_email = processText($_POST['replyto']);
+$phone = processText($_POST['phone']);
+$reason = processText($_POST['reason']);
+$raw_message = processText($_POST['message']);
+$raw_message = wordwrap($raw_message, 70);
+
+if (!empty(processText($_POST['_honeypot']))) {
   exit("Email forwarded");
 }
 

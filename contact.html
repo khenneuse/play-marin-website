@@ -45,8 +45,8 @@
         <form class="contact-form_form__2-tee" action="send-contact-email.php" method="POST"
           encType="multipart/form-data">
           <input type="text" class="contact-form_input__2UZtZ" name="name" placeholder="Name" />
-          <input type="email" class="contact-form_input__2UZtZ" name="_replyto" placeholder="Email" />
-          <input type="tel" class="contact-form_input__2UZtZ" name="_phone" placeholder="415-555-5555"
+          <input type="email" class="contact-form_input__2UZtZ" name="replyto" placeholder="Email" />
+          <input type="tel" class="contact-form_input__2UZtZ" name="phone" placeholder="415-555-5555"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
           <label class="contact-form_selectLabel">I would like to contact Play Marin about:
             <select class="contact-form_selectSelect" name="reason">
@@ -63,7 +63,6 @@
           <label class="contact-form_messageLabel__282nt">Message<textarea class="contact-form_textarea__3OR_Q"
               name="message"></textarea>
           </label>
-          <input type="hidden" name="_subject" value="Contact form submitted" />
           <input type="hidden" name="_honeypot" value="" />
           <input type="submit" class="buttons_primary__2cXqV contact-form_submit__3m197" value="Submit" />
         </form>
