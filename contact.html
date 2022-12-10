@@ -23,8 +23,9 @@
 
 <body>
   <div>
-    <nav class="header_wrapper__3LvaD"><a class="header_logo__1Uv9O"href="index.html"><img src="img/play-marin-logo@2x.png"
-          width="76" height="76" /></a><a class="header_mobile-menu-toggle__3bkru" onclick="menuToggle()"></a>
+    <nav class="header_wrapper__3LvaD"><a class="header_logo__1Uv9O" href="index.html"><img
+          src="img/play-marin-logo@2x.png" width="76" height="76" /></a><a class="header_mobile-menu-toggle__3bkru"
+        onclick="menuToggle()"></a>
       <ul class="header_menu-list__1I-0W" id="header-menu-list">
         <div class="header_sport-focus__11sMJ">
           <div class="header_sport-focus__11sMJ">
@@ -36,27 +37,40 @@
       </ul><button class="header_donate-button__3-7Py buttons_primary__2cXqV" onclick="goToDonationPage()">Donate</button>
     </nav>
     <main class="main_content">
-      <div class="contact-photo_position-wrap"><img
-          src="uploads/PM_Web_11222022_ColorsArtboard 34@2x-100.jpg" />
+      <div class="contact-photo_position-wrap"><img src="uploads/PM_Web_11222022_ColorsArtboard 34@2x-100.jpg" />
       </div>
       <div class="contact-photo_sizer"></div>
       <h1 class="contact-form_title__1f9u0">Send us a message</h1>
       <div class="contact-form_content__1G4l6">
-        <form class="contact-form_form__2-tee" action="https://mailthis.to/info@playmarin.org" method="POST"
-          encType="multipart/form-data"><input type="text" class="contact-form_input__2UZtZ" name="name"
-            placeholder="Name" /><input type="email" class="contact-form_input__2UZtZ" name="_replyto"
-            placeholder="Email" /><label class="contact-form_messageLabel__282nt">Message<textarea
-              class="contact-form_textarea__3OR_Q" name="message"></textarea></label><input type="hidden"
-            name="_subject" value="Contact form submitted" /><input type="hidden" name="_honeypot" value="" /><input
-            type="hidden" name="_confirmation" value="" /><input type="submit"
-            class="buttons_primary__2cXqV contact-form_submit__3m197" value="Submit" /></form>
+        <form class="contact-form_form__2-tee" action="send-contact-email.php" method="POST"
+          encType="multipart/form-data">
+          <input type="text" class="contact-form_input__2UZtZ" name="name" placeholder="Name" required onkeyup="enableSubmit()" />
+          <input type="email" class="contact-form_input__2UZtZ" name="replyto" placeholder="Email" required onkeyup="enableSubmit()" />
+          <input type="tel" class="contact-form_input__2UZtZ" name="phone" placeholder="Phone (###-###-####)"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+          <label class="contact-form_selectLabel">I would like to contact Play Marin about:
+            <select class="contact-form_selectSelect" name="reason">
+              <option value="Coaching">Coaching</option>
+              <option value="Donating">Donating</option>
+              <option value="Fundraising">Fundraising</option>
+              <option value="Partnering (organization/business)">Partnering</option>
+              <option value="Volunteering - Adult">Volunteering - Adult</option>
+              <option value="Volunteering - Student">Volunteering - Student</option>
+              <option value="Website Feedback">Website Feedback</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+          <label class="contact-form_messageLabel__282nt">Message<textarea class="contact-form_textarea__3OR_Q"
+              name="message"></textarea>
+          </label>
+          <input type="hidden" name="_honeypot" value="" />
+          <input type="submit" class="buttons_primary__2cXqV contact-form_submit__3m197" value="Submit"
+            disabled onclick="submitContactForm(this)"/>
+        </form>
         <hr class="contact-form_seperator__11WT9" />
         <ul class="contact-form_info-sidebar__qkwY4">
           <li>
             <div class="contact-form_info-illustration__1gR0Z contact-form_email__GYmUX"></div>info@playmarin.org
-          </li>
-          <li>
-            <div class="contact-form_info-illustration__1gR0Z contact-form_phone__1a9xq"></div>+1 415 944 7141
           </li>
           <li>
             <div class="contact-form_info-illustration__1gR0Z contact-form_address__3SGC9"></div>PO BOX 530<br />Sausalito, CA<br />94965
@@ -66,7 +80,7 @@
     </main>
     <footer class="footer_wrapper__2RcJw">
       <div class="footer_content__2Gmx6">
-        <div><a class="footer_logo__23cAG"href="index.html"><img src="img/play-marin-logo-white@2x.png" width="214"
+        <div><a class="footer_logo__23cAG" href="index.html"><img src="img/play-marin-logo-white@2x.png" width="214"
               height="122" alt="Play Marin logo" /></a>
           <ul class="footer_social-media-links__218DT">
             <li><a href="https://twitter.com/playmarin"><img src="img/twitter@2x.png" width="58" height="58"
@@ -79,7 +93,7 @@
           <p class="footer_copyright__3EiU8">Copyright © 2021 Play Marin, a California Non-Profit Corporation 94966. All rights reserved.</p>
         </div>
         <div class="footer_right-side__3spYM"><button class="buttons_primary-on-dark-background__4SjoW"
-          onclick="goToDonationPage()">Donate</button>
+            onclick="goToDonationPage()">Donate</button>
           <p class="footer_support-explainer__1XBIf">Your support helps PLAY MARIN close the activity gap in Marin City and provides a more diverse peer group for over 300 kids annually throughout Southern Marin.</p>
         </div>
       </div>
