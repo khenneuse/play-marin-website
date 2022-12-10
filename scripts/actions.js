@@ -24,3 +24,10 @@ function enableSubmit() {
   }
   submitButton.disabled = buttonDisabled;
 }
+
+function submitContactForm(target) {
+  target.value='Submitting';
+  target.disabled='disabled';
+  target.form.submit();
+  location.href = 'index.html';
+}
