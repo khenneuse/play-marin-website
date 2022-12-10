@@ -57,7 +57,7 @@ if (!empty($bcc_name)) {
   $headers[] = "bcc: $bcc_name <$bcc_email>";
 }
 
-mail($to,$subject,$message, implode("\r\n", $headers));
+mail($to_email,$subject,$message, implode("\r\n", $headers));
 
 echo "Email successfully sent\n";
 header("Location: index.html");
