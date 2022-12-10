@@ -21,7 +21,7 @@ function processText($text) {
   return $text;
 }
 
-if (isset($_POST['_honeypot'])) {
+if (!empty($_POST['_honeypot'])) {
   exit("Email forwarded");
 }
 

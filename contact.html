@@ -44,8 +44,8 @@
       <div class="contact-form_content__1G4l6">
         <form class="contact-form_form__2-tee" action="send-contact-email.php" method="POST"
           encType="multipart/form-data">
-          <input type="text" class="contact-form_input__2UZtZ" name="name" placeholder="Name" />
-          <input type="email" class="contact-form_input__2UZtZ" name="replyto" placeholder="Email" />
+          <input type="text" class="contact-form_input__2UZtZ" name="name" placeholder="Name" required />
+          <input type="email" class="contact-form_input__2UZtZ" name="replyto" placeholder="Email" required />
           <input type="tel" class="contact-form_input__2UZtZ" name="phone" placeholder="Phone (###-###-####)"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
           <label class="contact-form_selectLabel">I would like to contact Play Marin about:
@@ -64,15 +64,12 @@
               name="message"></textarea>
           </label>
           <input type="hidden" name="_honeypot" value="" />
-          <input type="submit" class="buttons_primary__2cXqV contact-form_submit__3m197" value="Submit" />
+          <input type="submit" class="buttons_primary__2cXqV contact-form_submit__3m197" value="Submit" onclick="this.disabled = true;"/>
         </form>
         <hr class="contact-form_seperator__11WT9" />
         <ul class="contact-form_info-sidebar__qkwY4">
           <li>
             <div class="contact-form_info-illustration__1gR0Z contact-form_email__GYmUX"></div>info@playmarin.org
-          </li>
-          <li>
-            <div class="contact-form_info-illustration__1gR0Z contact-form_phone__1a9xq"></div>+1 415 944 7141
           </li>
           <li>
             <div class="contact-form_info-illustration__1gR0Z contact-form_address__3SGC9"></div>PO BOX 530<br />Sausalito, CA<br />94965
