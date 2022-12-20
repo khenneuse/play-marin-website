@@ -37,7 +37,8 @@ $raw_message = isset($_POST['message']) ? processText($_POST['message']) : '';
 $raw_message = wordwrap($raw_message, 70);
 
 $ini_array = parse_ini_file($CONTACT_INI);
-$to_emails = $ini_array['to_name'];
+$to_names = $ini_array['to_name'];
+$to_emails = $ini_array['to_email'];
 $bcc_names  = isset($ini_array['bcc_name']) ? $ini_array['bcc_name'] : [];
 $bcc_emails = isset($ini_array['bcc_email']) ? $ini_array['bcc_email'] : [];
 
