@@ -62,7 +62,7 @@ for ($index = 0; $index < count($bcc_emails); $index++) {
   $headers[] = "bcc: $bcc_names[$index] <$bcc_emails[$index]>";
 }
 
-mail(implode(",",$to_email), $subject,$message, implode("\r\n", $headers));
+mail(implode(",",$to_email_array), $subject,$message, implode("\r\n", $headers));
 
 echo "Email successfully sent\n";
 header("Location: index.html");
