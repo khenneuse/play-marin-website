@@ -37,10 +37,10 @@ $raw_message = isset($_POST['message']) ? processText($_POST['message']) : '';
 $raw_message = wordwrap($raw_message, 70);
 
 $ini_array = parse_ini_file($CONTACT_INI);
-$to_name   = $ini_array['to_name'];
-$to_email  = $ini_array['to_email'];
-$bcc_name  = isset($ini_array['bcc_name']) ? $ini_array['bcc_name'] : '';
-$bcc_email = isset($ini_array['bcc_email']) ? $ini_array['bcc_email'] : '';
+$to_names = $ini_array['to_name'];
+$to_emails = $ini_array['to_email'];
+$bcc_names  = isset($ini_array['bcc_name']) ? $ini_array['bcc_name'] : [];
+$bcc_emails = isset($ini_array['bcc_email']) ? $ini_array['bcc_email'] : [];
 
 $subject = "$reason: $from";
 $message = <<<ET
@@ -51,13 +51,18 @@ Phone: $phone
 $raw_message
 ET;
 
+$to_email_array = array();
 $headers[] = "From: $from <$from_email>";
-$headers[] = "To: $to_name <$to_email>";
-if (!empty($bcc_name)) {
-  $headers[] = "bcc: $bcc_name <$bcc_email>";
+for ($index = 0; $index < count($to_emails); $index++) {
+  $email = "$to_names[$index] <$to_emails[$index]>";
+  $headers[] = "To: $email";
+  $to_email_array[] = $email;
+}
+for ($index = 0; $index < count($bcc_emails); $index++) {
+  $headers[] = "bcc: $bcc_names[$index] <$bcc_emails[$index]>";
 }
 
-mail($to_email,$subject,$message, implode("\r\n", $headers));
+mail(implode(",",$to_email_array), $subject,$message, implode("\r\n", $headers));
 
 echo "Email successfully sent\n";
 header("Location: index.html");
