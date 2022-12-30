@@ -16,6 +16,12 @@ function processText($text) {
   return $text;
 }
 
+function filterSpam($from, $phone) {
+  if ($from == 'Crytored' || str_starts_with($phone, '890')) {
+    exit("Email forwarded");
+  }
+}
+
 if (!empty($_POST['_honeypot'])) {
   exit("Email forwarded");
 }
@@ -35,6 +41,8 @@ $reason      = processText($_POST['reason']);
 $phone       = isset($_POST['phone']) ? processText($_POST['phone']) : '';
 $raw_message = isset($_POST['message']) ? processText($_POST['message']) : '';
 $raw_message = wordwrap($raw_message, 70);
+
+filterSpam($from, $phone);
 
 $ini_array = parse_ini_file($CONTACT_INI);
 $to_names = $ini_array['to_name'];
