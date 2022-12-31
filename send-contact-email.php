@@ -17,7 +17,7 @@ function processText($text) {
 }
 
 function filterSpam($from, $phone) {
-  if ($from == 'Crytored' || str_starts_with($phone, '890')) {
+  if ($from == 'Crytored' || substr($phone, 0, 3) == '890') {
     exit("Email forwarded");
   }
 }
