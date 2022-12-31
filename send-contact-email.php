@@ -16,6 +16,12 @@ function processText($text) {
   return $text;
 }
 
+function filterSpam($from, $phone) {
+  if ($from == 'Crytored' || substr($phone, 0, 3) == '890') {
+    exit("Email forwarded");
+  }
+}
+
 function buildEmailArray($to_names, $to_emails) {
   $email_array = array();
   for ($index = 0; $index < count($to_emails); $index++) {
@@ -45,6 +51,8 @@ $reason      = processText($_POST['reason']);
 $phone       = isset($_POST['phone']) ? processText($_POST['phone']) : '';
 $raw_message = isset($_POST['message']) ? processText($_POST['message']) : '';
 $raw_message = wordwrap($raw_message, 70);
+
+filterSpam($from, $phone);
 
 $ini_array = parse_ini_file($CONTACT_INI);
 $api_key = $ini_array['api_key'];
