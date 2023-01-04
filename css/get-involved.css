@@ -75,8 +75,7 @@
   margin-right: 40px;
 }
 
-.get_involved-cta_title,
-.get_involved-cta_title_div {
+.get_involved-cta_title {
   text-align: center;
 }
 
@@ -93,11 +92,6 @@
   line-height: 150%;
   font-weight: bold;
   font-style: italic;
-}
-
-.get_involved-cta_title_div {
-  font-weight: 900;
-  font-size: 22px
 }
 
 @media screen and (max-width:1020px) {
