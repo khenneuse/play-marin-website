@@ -115,6 +115,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: dense;
+  row-gap: 5px;
 }
 
 .news-grid_full-row-img {
@@ -148,5 +149,9 @@
   }
   .news-grid_img {
     text-align: center;
+  }
+  .news-grid_img img,
+  .news-grid_full-row-img img {
+    max-width: 100%;
   }
 }
