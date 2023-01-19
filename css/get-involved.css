@@ -75,10 +75,6 @@
   margin-right: 40px;
 }
 
-.get_involved-cta_title {
-  text-align: center;
-}
-
 .get_involved-preamble_description {
   line-height: 150%;
 }
@@ -89,6 +85,7 @@
 }
 
 .get_involved-cta_description {
+  text-align: center;
   line-height: 150%;
   font-weight: bold;
   font-style: italic;
@@ -105,8 +102,7 @@
     display: none
   }
 
-  .get_involved-preamble_title,
-  .get_involved-cta_title {
+  .get_involved-preamble_title {
     margin-left: 20px;
     margin-right: 20px;
   }
