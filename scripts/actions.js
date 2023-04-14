@@ -8,7 +8,7 @@ function menuToggle() {
 }
 
 function goToDonationPage() {
-  location.href = "https://donate.playmarin.org/675399-basketball";
+  location.href = "https://donate.playmarin.org/624125-players-night";
 }
 
 function enableSubmit() {
