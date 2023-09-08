@@ -8,7 +8,7 @@ function menuToggle() {
 }
 
 function goToDonationPage() {
-  location.href = "https://donate.playmarin.org/772333-summercamp";
+  location.href = "https://donate.playmarin.org/793295-help-marin-city-kids-play";
 }
 
 function enableSubmit() {
