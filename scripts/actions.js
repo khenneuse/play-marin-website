@@ -8,7 +8,7 @@ function menuToggle() {
 }
 
 function goToDonationPage() {
-  location.href = "https://donate.playmarin.org/793295-help-marin-city-kids-play";
+  location.href = "https://donate.playmarin.org/993693-walkathon";
 }
 
 function enableSubmit() {
