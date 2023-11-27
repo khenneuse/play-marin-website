@@ -8,7 +8,7 @@ function menuToggle() {
 }
 
 function goToDonationPage() {
-  location.href = "https://donate.playmarin.org/993693-walkathon";
+  location.href = "https://donate.playmarin.org/682286-snow-excited";
 }
 
 function enableSubmit() {
