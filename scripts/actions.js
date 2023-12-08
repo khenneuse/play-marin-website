@@ -8,7 +8,7 @@ function menuToggle() {
 }
 
 function goToDonationPage() {
-  location.href = "https://donate.playmarin.org/682286-snow-excited";
+  location.href = "https://donate.playmarin.org/362461-winter2023";
 }
 
 function enableSubmit() {
