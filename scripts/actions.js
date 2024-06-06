@@ -8,7 +8,7 @@ function menuToggle() {
 }
 
 function goToDonationPage() {
-  location.href = "https://donate.playmarin.org/624125-players-night";
+  location.href = "https://donate.playmarin.org/772200-summer-of-adventure-awaits-invest-in-play-marin-summer-camps";
 }
 
 function enableSubmit() {
